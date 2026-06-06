@@ -1,0 +1,33 @@
+[2025-11-10 10:00:00.000] [system::topology::RingTopology] [info] ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1 total nodes in ring: 8
+
+[2025-11-10 10:00:01.000] [workload] [info] sys[0] finished, 402000 cycles, exposed communication 198000 cycles.
+[2025-11-10 10:00:01.001] [statistics] [info] sys[0], Wall time: 402000
+[2025-11-10 10:00:01.002] [statistics] [info] sys[0], Comm time: 198000
+
+[2025-11-10 10:00:01.003] [workload] [info] sys[1] finished, 405000 cycles, exposed communication 200000 cycles.
+[2025-11-10 10:00:01.004] [statistics] [info] sys[1], Wall time: 405000
+[2025-11-10 10:00:01.005] [statistics] [info] sys[1], Comm time: 200000
+
+[2025-11-10 10:00:01.006] [workload] [info] sys[2] finished, 403000 cycles, exposed communication 199000 cycles.
+[2025-11-10 10:00:01.007] [statistics] [info] sys[2], Wall time: 403000
+[2025-11-10 10:00:01.008] [statistics] [info] sys[2], Comm time: 199000
+
+[2025-11-10 10:00:01.009] [workload] [info] sys[3] finished, 401000 cycles, exposed communication 197000 cycles.
+[2025-11-10 10:00:01.010] [statistics] [info] sys[3], Wall time: 401000
+[2025-11-10 10:00:01.011] [statistics] [info] sys[3], Comm time: 197000
+
+[2025-11-10 10:00:01.012] [workload] [info] sys[4] finished, 404000 cycles, exposed communication 199500 cycles.
+[2025-11-10 10:00:01.013] [statistics] [info] sys[4], Wall time: 404000
+[2025-11-10 10:00:01.014] [statistics] [info] sys[4], Comm time: 199500
+
+[2025-11-10 10:00:01.015] [workload] [info] sys[5] finished, 403500 cycles, exposed communication 199200 cycles.
+[2025-11-10 10:00:01.016] [statistics] [info] sys[5], Wall time: 403500
+[2025-11-10 10:00:01.017] [statistics] [info] sys[5], Comm time: 199200
+
+[2025-11-10 10:00:01.018] [workload] [info] sys[6] finished, 402500 cycles, exposed communication 198500 cycles.
+[2025-11-10 10:00:01.019] [statistics] [info] sys[6], Wall time: 402500
+[2025-11-10 10:00:01.020] [statistics] [info] sys[6], Comm time: 198500
+
+[2025-11-10 10:00:01.021] [workload] [info] sys[7] finished, 440000 cycles, exposed communication 220000 cycles.
+[2025-11-10 10:00:01.022] [statistics] [info] sys[7], Wall time: 440000
+[2025-11-10 10:00:01.023] [statistics] [info] sys[7], Comm time: 220000

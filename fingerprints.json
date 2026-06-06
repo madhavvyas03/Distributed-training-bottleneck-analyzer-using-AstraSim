@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": 1764237436.6450539,
+    "model_type": "bert",
+    "dominant_bottleneck": "Poor Overlap Efficiency",
+    "comm_fraction": 0.9361328125,
+    "compute_fraction": 0.0638671875,
+    "c2c_ratio": 14.65749235474006,
+    "rank_imbalance_pct": 1.875,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764237586.5029116,
+    "model_type": "bert",
+    "dominant_bottleneck": "Poor Overlap Efficiency",
+    "comm_fraction": 0.9361328125,
+    "compute_fraction": 0.0638671875,
+    "c2c_ratio": 14.65749235474006,
+    "rank_imbalance_pct": 1.875,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764237864.1794012,
+    "model_type": "bert",
+    "dominant_bottleneck": "Poor Overlap Efficiency",
+    "comm_fraction": 0.9361328125,
+    "compute_fraction": 0.0638671875,
+    "c2c_ratio": 14.65749235474006,
+    "rank_imbalance_pct": 1.875,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764237920.3489285,
+    "model_type": "bert",
+    "dominant_bottleneck": "Poor Overlap Efficiency",
+    "comm_fraction": 0.9361328125,
+    "compute_fraction": 0.0638671875,
+    "c2c_ratio": 14.65749235474006,
+    "rank_imbalance_pct": 1.875,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764238078.697348,
+    "model_type": "bert",
+    "dominant_bottleneck": "Poor Overlap Efficiency",
+    "comm_fraction": 0.9361328125,
+    "compute_fraction": 0.0638671875,
+    "c2c_ratio": 14.65749235474006,
+    "rank_imbalance_pct": 1.875,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764241278.0741746,
+    "model_type": "bert",
+    "dominant_bottleneck": "Poor Overlap Efficiency",
+    "comm_fraction": 0.9361328125,
+    "compute_fraction": 0.0638671875,
+    "c2c_ratio": 14.65749235474006,
+    "rank_imbalance_pct": 1.875,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764243098.212162,
+    "model_type": "bert",
+    "dominant_bottleneck": "Poor Overlap Efficiency",
+    "comm_fraction": 0.9361328125,
+    "compute_fraction": 0.0638671875,
+    "c2c_ratio": 14.65749235474006,
+    "rank_imbalance_pct": 1.875,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764243333.28036,
+    "model_type": "dlrm",
+    "dominant_bottleneck": "Bandwidth Saturation",
+    "comm_fraction": 0.7580758426966292,
+    "compute_fraction": 0.24192415730337077,
+    "c2c_ratio": 3.1335268505079825,
+    "rank_imbalance_pct": 2.584269662921348,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764316008.1067517,
+    "model_type": "bert",
+    "dominant_bottleneck": "Network Congestion",
+    "comm_fraction": 0.4940815700705305,
+    "compute_fraction": 0.5059184299294694,
+    "c2c_ratio": 0.9766032246332889,
+    "rank_imbalance_pct": 9.567617295308189,
+    "gpu_utilization_pct": 100.0
+  },
+  {
+    "timestamp": 1764337090.4242744,
+    "model_type": "bert",
+    "dominant_bottleneck": "Network Congestion",
+    "comm_fraction": 0.4940815700705305,
+    "compute_fraction": 0.5059184299294694,
+    "c2c_ratio": 0.9766032246332889,
+    "rank_imbalance_pct": 9.567617295308189,
+    "gpu_utilization_pct": 100.0
+  }
+]

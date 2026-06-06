@@ -1,0 +1,10 @@
+numpy
+matplotlib
+pandas
+reportlab
+regex
+python-dateutil
+Pillow
+tabulate
+ollama
+scikit-learn

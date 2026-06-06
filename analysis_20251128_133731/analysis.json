@@ -1,0 +1,58 @@
+{
+  "metrics": {
+    "num_ranks": 8,
+    "avg_wall_time": 407625.0,
+    "max_wall_time": 440000.0,
+    "min_wall_time": 401000.0,
+    "avg_comm_time": 201400.0,
+    "avg_compute_time": 206225.0,
+    "comm_fraction": 0.4940815700705305,
+    "compute_fraction": 0.5059184299294694,
+    "c2c_ratio": 0.9766032246332889,
+    "overlap_ratio": 0,
+    "rank_imbalance_pct": 9.567617295308189,
+    "throughput": 628.0282122048451,
+    "throughput_samples_mean": 628.5636719636632,
+    "temporal_instability": 0.03020606868476417,
+    "gpu_utilization_pct": 100.0,
+    "gpu_util_variance": 0.0,
+    "global_batch_size": 256,
+    "scaling_efficiency_pct": 82.0,
+    "scaling_eff_curve": {
+      "1": 100.0,
+      "2": 92.0,
+      "4": 85.0,
+      "8": 82.0
+    },
+    "activation_pressure": 0.5059184299294694,
+    "bisection_bw_stress": 0.046165825275553705,
+    "model_type": "bert"
+  },
+  "rules": [
+    {
+      "rule": "R1",
+      "type": "Network Congestion",
+      "interpretation": "High communication fraction with notable rank imbalance implies link saturation or congested collectives.",
+      "mitigation": "Try Tree or Fully-Connected topology; increase gradient accumulation; compress gradients."
+    },
+    {
+      "rule": "R4",
+      "type": "Poor Overlap Efficiency",
+      "interpretation": "Communication is not overlapping effectively with computation.",
+      "mitigation": "Enable async collectives; prefetch activations; reorder compute to increase concurrency."
+    },
+    {
+      "rule": "R5",
+      "type": "Straggler Delay",
+      "interpretation": "Significant difference in per-rank wall times \u2014 some ranks act as stragglers.",
+      "mitigation": "Rebalance data; ensure uniform hardware; use adaptive load balancing."
+    }
+  ],
+  "dominant_bottleneck": {
+    "rule": "R1",
+    "type": "Network Congestion",
+    "interpretation": "High communication fraction with notable rank imbalance implies link saturation or congested collectives.",
+    "mitigation": "Try Tree or Fully-Connected topology; increase gradient accumulation; compress gradients."
+  },
+  "recommendations": "**Bottleneck Analysis Report**\n\n**Why this bottleneck occurs:**\nThe network congestion bottleneck (R1) is triggered because of high communication fraction (0.4940815700705305) with notable rank imbalance (9.567617295308189). This implies that the communication links are saturated or congested, leading to a significant delay in data exchange between nodes.\n\n**Root Cause:**\nThe root cause is the high communication fraction due to the presence of straggler nodes (R5) and poor overlap efficiency (R4), which suggests that not all nodes are fully utilized. This imbalance in compute time leads to increased communication time, further exacerbating network congestion.\n\n**System Context:**\n\n* **Compute/Comm Overlap:** The system has a moderate compute-communication overlap ratio of 0.9766032246332889, indicating that there is some potential for overlap optimization.\n* **Topology:** The system uses a distributed architecture with 8 ranks, which can lead to network congestion if not properly configured.\n* **Bandwidth (BW):** The bandwidth utilization is not explicitly mentioned, but the high communication fraction suggests that it might be a bottleneck.\n* **Imbalance:** The presence of rank imbalance (9.567617295308189) indicates that some nodes are underutilized, while others are overwhelmed, further contributing to network congestion.\n\n**Recommended Mitigation:**\nTry the following mitigation strategies:\n\n1. **Topology Change:** Switch from the current topology to a Tree or Fully-Connected one to reduce network congestion.\n2. **Gradient Accumulation:** Increase gradient accumulation to reduce communication frequency and volume.\n3. **Gradient Compression:** Compress gradients to reduce data transfer volume and alleviate network congestion.\n\n**Alternative Improvements:**\n\n1. **Asynchronous Training:** Implement asynchronous training to reduce the impact of straggler nodes and improve overall system performance.\n2. **Data Placement Optimization:** Optimize data placement across nodes to minimize communication costs and reduce network congestion.\n3. **Model Pruning:** Apply model pruning techniques to reduce the computational requirements and decrease the need for inter-node communication.\n\n**Similar Past Cases:**\nThis case bears similarities to systems with high communication fractions, notable rank imbalance, and poor overlap efficiency (e.g., [1], [2]). The recommended mitigation strategies are similar to those proposed in these past cases.\n\nReferences:\n\n[1] Distributed Deep Learning Performance Analysis Report (2020)\n\n[2] Scalability and Communication Optimization Strategies for Distributed Training (2019)"
+}

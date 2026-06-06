@@ -1,0 +1,42 @@
+[ASTRA-sim] Compilation finished.
+[ASTRA-sim] Running ASTRA-sim BERT Training Simulation with Analytical Network Backend...
+
+[2025-11-05 10:18:42.134] [system::topology::RingTopology] [info] ring of node 0, id: 0 dimension: local total nodes in ring: 8 index in ring: 0 offset: 1 total nodes in ring: 8
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[0] finished, 460300 cycles, exposed communication 210200 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[0]. Post statistics processing start.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[0]. Post statistics processing end.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[0], Wall time: 460300
+[2025-11-05 10:18:42.140] [statistics] [info] sys[0], Comm time: 210200
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[1] finished, 461150 cycles, exposed communication 211050 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[1], Wall time: 461150
+[2025-11-05 10:18:42.140] [statistics] [info] sys[1], Comm time: 211050
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[2] finished, 463700 cycles, exposed communication 212400 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[2], Wall time: 463700
+[2025-11-05 10:18:42.140] [statistics] [info] sys[2], Comm time: 212400
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[3] finished, 462800 cycles, exposed communication 211800 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[3], Wall time: 462800
+[2025-11-05 10:18:42.140] [statistics] [info] sys[3], Comm time: 211800
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[4] finished, 460950 cycles, exposed communication 210700 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[4], Wall time: 460950
+[2025-11-05 10:18:42.140] [statistics] [info] sys[4], Comm time: 210700
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[5] finished, 462100 cycles, exposed communication 211900 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[5], Wall time: 462100
+[2025-11-05 10:18:42.140] [statistics] [info] sys[5], Comm time: 211900
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[6] finished, 464000 cycles, exposed communication 213000 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[6], Wall time: 464000
+[2025-11-05 10:18:42.140] [statistics] [info] sys[6], Comm time: 213000
+
+[2025-11-05 10:18:42.140] [workload] [info] sys[7] finished, 462500 cycles, exposed communication 211600 cycles.
+[2025-11-05 10:18:42.140] [statistics] [info] sys[7], Wall time: 462500
+[2025-11-05 10:18:42.140] [statistics] [info] sys[7], Comm time: 211600
+
+[2025-11-05 10:18:42.142] [system] [warning] Exiting
+
+[ASTRA-sim] Finished the execution.
