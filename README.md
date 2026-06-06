@@ -522,6 +522,7 @@ For each distributed training run, the AI Agent:
 - Visualizes system behavior through charts and heatmaps
 
 ### Sample Output
+<img width="1404" height="920" alt="image" src="https://github.com/user-attachments/assets/cbbd31e3-5a9f-459e-9f5c-1c5c7fff6880" />
 
 ![Performance Analysis Report](assets/dashboard.png)
 
