@@ -523,7 +523,7 @@ For each distributed training run, the AI Agent:
 
 ### Sample Output
 
-![Performance Analysis Report](assets/output.png)
+![Performance Analysis Report](assets/dashboard.png)
 
 ### Key Findings
 
