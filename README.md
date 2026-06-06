@@ -507,7 +507,66 @@ The top-3 most similar historical cases are retrieved and included in the LLM pr
 ---
 
 ## 📊 Output Visualizations
+## Example AI-Generated Performance Analysis Report
 
+The system automatically transforms raw Astra-Sim execution traces into a comprehensive performance engineering report.
+
+For each distributed training run, the AI Agent:
+
+- Extracts communication and compute metrics
+- Computes scaling and utilization statistics
+- Identifies dominant bottlenecks
+- Applies explainable reasoning rules (R1–R9)
+- Generates root-cause analysis
+- Produces optimization recommendations
+- Visualizes system behavior through charts and heatmaps
+
+### Sample Output
+
+![Performance Analysis Report](assets/output.png)
+
+### Key Findings
+
+| Metric | Value |
+|----------|----------|
+| Average Wall Time | 407,625 cycles |
+| Communication Fraction | 49.4% |
+| Compute Fraction | 50.6% |
+| C2C Ratio | 0.98 |
+| Rank Imbalance | 9.57% |
+
+### AI Diagnosis
+
+**Dominant Bottleneck:** Network Congestion
+
+The agent detected elevated communication overhead combined with rank imbalance, indicating congestion during collective communication operations.
+
+### Triggered Rules
+
+| Rule | Description |
+|--------|--------|
+| R1 | Network Congestion |
+| R4 | Poor Overlap Efficiency |
+| R5 | Straggler Delay |
+
+### Recommended Actions
+
+1. Switch to Tree or Fully Connected topology
+2. Increase gradient accumulation
+3. Apply gradient compression
+4. Improve compute-communication overlap
+5. Rebalance workload across ranks
+
+### Generated Insight
+
+Unlike traditional monitoring tools that only expose metrics, the AI Agent explains:
+
+- Why the bottleneck occurs
+- Which system components are responsible
+- Which optimization strategies are likely to help
+- The expected impact of each recommendation
+
+This enables engineers to move from trace collection to actionable performance optimization in a single workflow.
 The analyzer generates **9 chart types**, all saved as PNG files:
 
 | Chart | File | What It Shows |
