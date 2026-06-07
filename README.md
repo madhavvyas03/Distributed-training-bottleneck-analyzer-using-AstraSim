@@ -48,7 +48,7 @@ This tool takes **ASTRA-Sim simulation output logs** and, through a multi-stage 
 
 - Parses per-rank timing data (wall time, communication time, compute time)
 - Computes 15+ derived performance metrics
-- Applies a **rule-based expert system (R1–R10)** to classify the dominant bottleneck
+- Applies a **rule-based expert system R1 through R10** to classify the dominant bottleneck
 - Generates congestion heatmaps, critical-path breakdowns, C2C ratio plots, and more
 - Produces a **landscape PDF dashboard** summarizing all findings
 - Queries a **local Ollama LLM (LLaMA3)** for human-readable expert analysis and mitigation recommendations
